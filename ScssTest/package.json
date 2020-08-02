@@ -1,0 +1,27 @@
+{
+  "name": "scss-exercise",
+  "version": "1.0.0",
+  "description": "To exercise SCSS description and practice all",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanti113/SCSSPractice.git"
+  },
+  "author": "Bae kigun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanti113/SCSSPractice/issues"
+  },
+  "homepage": "https://github.com/vanti113/SCSSPractice#readme",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}

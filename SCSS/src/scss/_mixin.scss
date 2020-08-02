@@ -1,0 +1,13 @@
+@mixin one($arg) {
+  width: 100px;
+  height: 50px;
+  border-radius: 40px;
+  color: red;
+  @if ($arg == "odd") {
+    background-color: green;
+    color: white;
+  } @else {
+    background-color: red;
+    color: blue;
+  }
+}

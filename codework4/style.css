@@ -1,0 +1,83 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  width: 100%;
+  height: 100px;
+  background-color: #f8a5c2;
+  color: white;
+}
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-rows: repeat(2, minmax(300px, 1fr)); */
+  grid-auto-rows: 300px;
+  font-size: 20px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+  padding: 15px;
+}
+.g1 {
+  background-color: #f3a683;
+}
+.g3 {
+  background-color: #786fa6;
+}
+.g5 {
+  background-color: #f5cd79;
+}
+.g8 {
+  background-color: #63cdda;
+}
+.g10 {
+  background-color: #c44569;
+}
+.g12 {
+  background-color: #20bf6b;
+}
+.g2 {
+  background-image: url("./1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.g4 {
+  background-image: url("./2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.g6 {
+  background-image: url("./3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.g7 {
+  background-image: url("./4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.g9 {
+  background-image: url("./5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.g11 {
+  background-image: url("./6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

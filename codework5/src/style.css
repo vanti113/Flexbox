@@ -1,0 +1,81 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+}
+.left {
+  background-color: red;
+  display: grid;
+  grid-template:
+    "head1 head2" 1fr
+    "main1 main2" 1fr
+    "main1 footer" 1fr/1fr 1fr;
+}
+.left .head1 {
+  grid-area: head1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./one1.jpg");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.left .head1 span:nth-child(2n + 1) {
+  transform: rotateX(180deg);
+}
+.left .head2 {
+  background-color: #6c01ff;
+  grid-area: head2;
+}
+.left .main1 {
+  background-color: #df2332;
+  grid-area: main1;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  padding: 15px 10px;
+}
+.left .main2 {
+  background-color: #ececec;
+  grid-area: main2;
+}
+.left .footer {
+  background-color: #ffc904;
+  grid-area: footer;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.right {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-weight: 600;
+}
+
+.right_L,
+.right_R {
+  padding: 15px;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+}
+.right_L span:first-child,
+.right_R span:first-child {
+  margin-bottom: 15px;
+}
+.right_L span:not(:first-child),
+.right_R span:not(:first-child) {
+  font-size: 20px;
+  margin: 3px 0px;
+}

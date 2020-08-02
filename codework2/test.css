@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: 500px 200px;
+  grid-template-rows: 100px 500px 400px;
+  gap: 20px;
+}
+
+.header {
+  background-color: aquamarine;
+  grid-column: span 2;
+}
+.content {
+  background-color: blueviolet;
+}
+.nav {
+  background-color: beige;
+}
+.footer {
+  background-color: cornflowerblue;
+  grid-column: span 2;
+}

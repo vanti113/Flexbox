@@ -1,0 +1,123 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+header {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+  font-size: 6vw;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b60608;
+  border-bottom: 4px solid black;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 50px;
+  grid-auto-rows: 50px;
+  gap: 4px;
+}
+.header div {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header div select {
+  border: none;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  font-size: 20px;
+}
+.header div label {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    font-size: 45px;
+  }
+}
+@media (min-width: 610px) and (max-width: 830px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.boxes {
+  background-color: #b60608;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 4px;
+  border-top: 4px solid #b60608;
+}
+@media (min-width: 750px) and (max-width: 1020px) {
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.boxes .box1 {
+  background-image: url("https://lh3.googleusercontent.com/proxy/6lByOSfYAktBGxSDc29O4hoNmic-7VMX9m40tLmd8vrp-X3l3FRMq5eM_r_0Xdo9rH8DMyzFIRwb80S59nmKazfaHjeFe9U35vjIHf0Npt-2ojIOFNvk5q9phJwdke8Ba3Kei2EBaA_ZbSCLQCar8w1TWtN_IWHvDQ4t08ofN2NmBVuK-mmTr5B6SvHpyByGyA");
+  background-size: cover;
+}
+.boxes .box2 {
+  background-image: url("https://thumbs-prod.si-cdn.com/yxWBFyE-K5y94iPJZ2ixYKfQd-Q=/1072x720/filters:no_upscale():focal(582x120:583x121)/https://public-media.si-cdn.com/filer/d6/7d/d67d186f-f5f3-4867-82c5-2c772120304f/thanos-snap-featured-120518-2.jpg");
+  background-size: cover;
+}
+.boxes .box3 {
+  background-image: url("https://cdn3.movieweb.com/i/article/yG7gK46eSiW63VbESYZ6Op0j570GXg/1200:100/Guardians-Of-The-Galaxy-3-Evil-Gamora-Zoe.jpg");
+  background-size: cover;
+}
+.boxes .box4 {
+  background-image: url("https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2018/06/age-of-ultron.jpg");
+  background-size: cover;
+}
+.boxes .box5 {
+  background-image: url("https://actionagogo.com/wp-content/uploads/2017/06/07-2.jpg");
+  background-size: cover;
+}
+.boxes .box6 {
+  background-image: url("https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/19/1494599203-greatest-superhero-films-iron-man.jpg");
+  background-size: cover;
+}
+.boxes .box7 {
+  background-image: url("https://www.esquireme.com/public/styles/full_img/public/images/2019/07/17/thor.jpg?itok=Il--Lrb7");
+  background-size: cover;
+}
+.boxes .box8 {
+  background-image: url("https://unrealitymag.com/wp-content/uploads/2019/01/Captain-Marvel-Ronan-Accuser-Lee-Pace-Responds-Casting-750x395.jpg");
+  background-size: cover;
+}
+.boxes .box9 {
+  background-image: url("https://i.ytimg.com/vi/MAfIvBgChjQ/maxresdefault.jpg");
+  background-size: cover;
+}
+.boxes .box10 {
+  background-image: url("https://img.cinemablend.com/filter:scale/quill/a/2/2/b/d/0/a22bd0b3a8ea873b67f6f228d0bd792f95cdd4c7.jpg?mw=600");
+  background-size: cover;
+}
+.boxes .box11 {
+  background-image: url("https://i.insider.com/527a5fb4ecad047a079ab76e?width=1100&format=jpeg&auto=webp");
+  background-size: cover;
+}
+.boxes .box12 {
+  background-image: url("https://img.cinemablend.com/filter:scale/quill/b/a/6/2/1/b/ba621ba10a9794ad162c6dc36138f3189c76013f.jpg?mw=600");
+  background-size: cover;
+}

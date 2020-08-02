@@ -1,0 +1,68 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  background-color: #efea45;
+  padding: 10px;
+}
+.main {
+  background-color: red;
+  display: grid;
+  grid-template:
+    "header header header header" 1fr
+    "nav_left main main nav_right" minmax(250px, 20fr)
+    "footer footer footer footer" 1fr /1fr 19fr 19fr 1fr;
+  gap: 5px;
+}
+.header {
+  background-color: #ffffff;
+  grid-area: header;
+}
+.footer {
+  background-color: #ffffff;
+  grid-area: footer;
+}
+.main {
+  background-color: aqua;
+  grid-area: main;
+}
+
+.nav_Left {
+  background-color: #ff6c2c;
+  grid-area: nav_left;
+  display: grid;
+  grid-template-rows: 6.5fr 4fr 1fr;
+  grid-template-columns: minmax(35px, 1fr);
+  gap: 5px;
+}
+.nav_left_top {
+  width: 100%;
+  background-color: #ff6c2c;
+}
+.nav_left_mid {
+  width: 100%;
+  background-color: white;
+}
+.nav_left_bottom {
+  width: 100%;
+  background-color: white;
+}
+
+.nav_right {
+  background-color: #ff6c2c;
+  grid-area: nav_right;
+  gap: 5px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: minmax(33px, 1fr);
+}
+.nav_right_top,
+.nav_right_bottom {
+  width: 100%;
+  background-color: #40ac49;
+}
